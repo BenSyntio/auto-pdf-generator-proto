@@ -1,5 +1,6 @@
 name: CI Main
 
+on:
   pull_request:
     branches: [ main ]
 

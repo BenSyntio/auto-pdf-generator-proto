@@ -23,10 +23,10 @@ jobs:
         with:
           fetch-depth: 0
 
-        - name: Run Super-Linter
-          uses: github/super-linter@v3
+      - name: Run Super-Linter
+        uses: github/super-linter@v3
           
-          env:
-            VALIDATE_ALL_CODEBASE: false
-            DEFAULT_BRANCH: develop
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: develop
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
